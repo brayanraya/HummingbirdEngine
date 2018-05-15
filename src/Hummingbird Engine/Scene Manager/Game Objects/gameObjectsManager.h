@@ -1,0 +1,71 @@
+#ifndef _gameObjectsManager
+#define _gameObjectsManager
+
+#include <list>
+
+class gameObjects;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/// <summary>	Manages game objects entry and exit of scene. </summary>
+///
+/// <remarks>	Braya, 3/1/2017. </remarks>
+////////////////////////////////////////////////////////////////////////////////////////////////////
+class gameObjectsManager
+{	
+public:
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// <summary>	Scene Enter Or Exit. </summary>
+	///
+	/// <remarks>	Braya, 2/28/2017. </remarks>
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	enum class SCENE_ID: bool
+	{
+		ENTER,
+		EXIT,
+	};
+
+	//------------------------------------
+	//Big 4
+	//------------------------------------
+	gameObjectsManager() {};
+	~gameObjectsManager();
+	gameObjectsManager(const gameObjectsManager&) = delete;
+	gameObjectsManager& operator=(const gameObjectsManager&) = delete;
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// <summary>	Registers the game object to the list. </summary>
+	///
+	/// <remarks>	Braya, 3/1/2017. </remarks>
+	///
+	/// <param name="draw">	[in,out] The game object. </param>
+	/// <param name="type">	Enter or Exit. </param>
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	void registerGameObjects(gameObjects* draw, SCENE_ID type);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// <summary>	Deregisters the game object to the list. </summary>
+	///
+	/// <remarks>	Braya, 3/1/2017. </remarks>
+	///
+	/// <param name="draw">	[in,out] The game object. </param>
+	/// <param name="type">	Enter or Exit. </param>
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	void deregisterGameObjects(gameObjects* draw, SCENE_ID type);
+
+private:
+	std::list<gameObjects*> gameObjectsEnterList;
+	std::list<gameObjects*> gameObjectsExitList;
+
+friend class scene;
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// <summary>	Process the elements of the Updatable list. </summary>
+	///
+	/// <remarks>	Braya, 3/1/2017. </remarks>
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	void processElements();
+
+
+};
+
+#endif //!_gameObjectsManager

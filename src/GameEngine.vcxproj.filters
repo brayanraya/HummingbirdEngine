@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files">
+      <UniqueIdentifier>{417127db-9b08-483f-a1a2-d2e3119c8d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Objects">
+      <UniqueIdentifier>{0913d6c6-108c-44b4-83f7-788f34772c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Scene">
+      <UniqueIdentifier>{34fc8742-1463-4181-a0dd-167947e8862e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine">
+      <UniqueIdentifier>{9f4aa2c5-d1cc-45e1-a318-e02d10d6d691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Render">
+      <UniqueIdentifier>{073c8efd-cb0b-478a-b93a-5a5ab2c75c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Render\Camera Manager">
+      <UniqueIdentifier>{b0341aa6-d4c0-4f1a-a03d-79762f7f655d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets">
+      <UniqueIdentifier>{cec4dc42-b51c-4f50-ae37-bb6ffcf1d798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\ShaderManager">
+      <UniqueIdentifier>{3599c04c-699e-4d3e-9c7f-3caa9cc587f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\Model Manager">
+      <UniqueIdentifier>{e1d4b157-0fba-4910-b395-983ceb72e218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\Texture Manager">
+      <UniqueIdentifier>{4236bc2c-8a99-47b9-97cc-fcab3949fa05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\Image Manager">
+      <UniqueIdentifier>{cec8ddf5-d89f-463f-9e42-b70400c7f7ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene">
+      <UniqueIdentifier>{ebb3b1d7-c74f-4728-b9f5-b8289e808a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Game Objects">
+      <UniqueIdentifier>{6ea1cd2c-94e0-49ea-bd76-dfb0f8100b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes">
+      <UniqueIdentifier>{187a4e66-7389-4c84-8a1a-3f16c43b5feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Updateable">
+      <UniqueIdentifier>{2f48731c-1cef-49b7-9e9d-442154f32c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Drawable">
+      <UniqueIdentifier>{5eb5d4fc-fd82-4a9a-ae04-fedd80ba8f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Inputable">
+      <UniqueIdentifier>{cae454aa-182b-4e81-9434-7d9514d7649b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Command">
+      <UniqueIdentifier>{bbfcda49-2a57-464c-a119-cfee253ff21e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Shared Enums">
+      <UniqueIdentifier>{d4d0e2bf-21b4-4838-a8d8-fb0ee25f5434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Alarmable">
+      <UniqueIdentifier>{b322a0c6-2aa6-435a-8761-f3e5d0677aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Attributes\Collidable">
+      <UniqueIdentifier>{387d4cc5-e7f2-4b5b-b00c-09a73a30a887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Scene\Scene">
+      <UniqueIdentifier>{64767a09-f3a1-4899-9c46-339a99765434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Main Game">
+      <UniqueIdentifier>{92c434d8-5c8b-4cd8-be36-df0293313333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Time">
+      <UniqueIdentifier>{8d4be14e-6520-449f-9ab4-6f9bbee8da94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem">
+      <UniqueIdentifier>{12383d2d-914e-420c-ac11-15c8818e8a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Tools">
+      <UniqueIdentifier>{4273e929-e06f-41d5-8503-1a6d062b1efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Tools\Visualizer">
+      <UniqueIdentifier>{2f8f04b2-d2fc-4176-ba59-81913bd4ccc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Tools\Colors">
+      <UniqueIdentifier>{6dafb72b-9918-427f-b627-24e20de10c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Tools\Math">
+      <UniqueIdentifier>{6f913e7d-5774-4880-8c6c-f89face0aeb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Volumes">
+      <UniqueIdentifier>{63892dd9-cb80-4cf9-8951-adbcdbe14350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Volumes\OBB">
+      <UniqueIdentifier>{4da9fc9f-6c5b-439f-b149-2465d2631539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Volumes\Base Volume">
+      <UniqueIdentifier>{19536e9a-db28-465e-90f5-a8fa95d83e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Volumes\Bounding Sphere">
+      <UniqueIdentifier>{3597b4f9-e767-4eec-a029-6f733637cced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\CollisionSystem\Volumes\ABB">
+      <UniqueIdentifier>{6bea18b1-8cb9-488e-b10f-f705e585c86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\Terrain Manager">
+      <UniqueIdentifier>{781f257a-a938-4a9b-805b-da6e9d749110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\irrKlang 1.5">
+      <UniqueIdentifier>{a645ba9d-6235-4365-a80f-c2c571476347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\irrKlang 1.5\include">
+      <UniqueIdentifier>{4d5b5cf3-3c4a-4cb7-af25-ef9eb095b263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\irrKlang 1.5\lib">
+      <UniqueIdentifier>{f6cc977d-3fdf-43c9-a0cc-c7814a9c32d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Assets\Sound Manager">
+      <UniqueIdentifier>{e8d14bee-f122-4f4f-844f-8386911299cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\User Settings">
+      <UniqueIdentifier>{c8229a22-8654-4372-9636-ef5e39fc8991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Objects\Player">
+      <UniqueIdentifier>{b4be59c3-d72f-4d90-a391-505ea5b91279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Objects\Enemy">
+      <UniqueIdentifier>{247309ac-a3a0-4666-9598-d839cabc90c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Objects\Tank">
+      <UniqueIdentifier>{f4d037b8-bfe8-46de-98d6-065e13874387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Files\Objects\HUDs">
+      <UniqueIdentifier>{b399969d-93a6-4d4b-8c31-b701837e2efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Hummingbird Engine\Terrain">
+      <UniqueIdentifier>{729279b1-ee42-47d6-a188-d0c3205ea266}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Model Manger\modelManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\Model Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Texture Manager\textureManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\Texture Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Shader Manger\shaderManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Render Manager\Camera Manager\cameraManager.h">
+      <Filter>Engine\Hummingbird Engine\Render\Camera Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\sceneManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\scene.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjects.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Main Game\hummingbirdEngine.h">
+      <Filter>Engine\Hummingbird Engine\Main Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\userScene.h">
+      <Filter>User Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\frigate.h">
+      <Filter>User Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawable.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Command\commandBase.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\sceneRegistrationBroker.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableRegistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Shared Enum\regestrationState.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Shared Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableRegistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateable.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmable.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableRegistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableDeregistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableRegistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputable.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\keyboardEventManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\singleKeyEventManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableDeregistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Time\Time Manager\timeManager.h">
+      <Filter>Engine\Hummingbird Engine\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsEntryCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsExitCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableDeregistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableDeregistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Time\Freeze Time\freezeTime.h">
+      <Filter>Engine\Hummingbird Engine\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\defaultScene.h">
+      <Filter>User Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideable.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableManager.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableRegistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroup.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestPairCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collisionTestCommandBase.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestSelfCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableDeregistratonCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Bounding Sphere\CollisionVolumeBSphere.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Bounding Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Image Manger\imageManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\Image Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Visualizer.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Calculations.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Color.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\ground.h">
+      <Filter>User Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\AABB\CollisionVolumeAABB.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\ABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\OBB\CollisionVolumeOBB.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\OBB</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolumeBoundingBox.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Base Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolume.h">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Base Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroupBase.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableCommandBase.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableUpdateGroupCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Additions\Terrain\Terrain.h">
+      <Filter>Engine\Hummingbird Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Terrain Manager\terrainManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\Terrain Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestTerrainCommand.h">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Additions\Terrain\TerrainRectangleArea.h">
+      <Filter>Engine\Hummingbird Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ESoundEngineOptions.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ESoundOutputDrivers.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_EStreamModes.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioRecorder.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioStream.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioStreamLoader.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IFileFactory.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IFileReader.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IRefCounted.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_irrKlangTypes.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISound.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundDeviceList.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundEffectControl.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundEngine.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundMixedOutputReceiver.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundSource.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundStopEventReceiver.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IVirtualRefCounted.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_SAudioStreamFormat.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_vec3d.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\irrKlang 1.5\include\irrKlang.h">
+      <Filter>_Libs\irrKlang 1.5\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Sound Manager\SoundManager.h">
+      <Filter>Engine\Hummingbird Engine\Assets\Sound Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Hummingbird Engine\hummingbirdCore.h">
+      <Filter>Engine\Hummingbird Engine\Main Game</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\player.h">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\bullet.h">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\bulletFactoryWithRecycling.h">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\EnemtBullet.h">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\EnemtBulletFactoryWithRecycling.h">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\EnemySoldier.h">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\TankShell.h">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\tank.h">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\TankShellFactoryWithRecycling.h">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\ScoreManager.h">
+      <Filter>User Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\HUD.h">
+      <Filter>User Files\Objects\HUDs</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\startHUD.h">
+      <Filter>User Files\Objects\HUDs</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\toySoldierSpawnController.h">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="User Files\toySoldierFactoryWithRecycling.h">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+    <Library Include="..\dist\irrKlang 1.5\lib\irrKlang.lib">
+      <Filter>_Libs\irrKlang 1.5\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Model Manger\modelManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\Model Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Texture Manager\textureManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\Texture Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Shader Manger\shaderManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Render Manager\Camera Manager\cameraManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Render\Camera Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\scene.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\sceneManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjects.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\Setup\userResources.cpp">
+      <Filter>User Files\User Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\Setup\userSettings.cpp">
+      <Filter>User Files\User Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Main Game\hummingbirdEngine.cpp">
+      <Filter>Engine\Hummingbird Engine\Main Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\userScene.cpp">
+      <Filter>User Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\frigate.cpp">
+      <Filter>User Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawable.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Command\commandBase.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\sceneRegistrationBroker.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableRegistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableRegistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateable.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmable.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableRegistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableDeregistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableRegistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputable.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\keyboardEventManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\singleKeyEventManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableDeregistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Time\Time Manager\timeManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsEntryCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsExitCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableDeregistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableDeregistratonCommand.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Updateable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Time\Freeze Time\freezeTime.cpp">
+      <Filter>Engine\Hummingbird Engine\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\defaultScene.cpp">
+      <Filter>User Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Main Game\main.cpp">
+      <Filter>Engine\Hummingbird Engine\Main Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideable.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Bounding Sphere\CollisionVolumeBSphere.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Bounding Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Image Manger\imageManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\Image Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Visualizer.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Calculations.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Color.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Tools\Colors</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\ground.cpp">
+      <Filter>User Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\AABB\CollisionVolumeAABB.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\ABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\OBB\CollisionVolumeOBB.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\OBB</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolumeBoundingBox.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Base Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolume.cpp">
+      <Filter>Engine\Hummingbird Engine\CollisionSystem\Volumes\Base Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroupBase.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableCommandBase.cpp">
+      <Filter>Engine\Hummingbird Engine\Scene\Attributes\Collidable</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Additions\Terrain\Terrain.cpp">
+      <Filter>Engine\Hummingbird Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Terrain Manager\terrainManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\Terrain Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Additions\Terrain\TerrainRectangleArea.cpp">
+      <Filter>Engine\Hummingbird Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Sound Manager\SoundManager.cpp">
+      <Filter>Engine\Hummingbird Engine\Assets\Sound Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\player.cpp">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\bullet.cpp">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\bulletFactoryWithRecycling.cpp">
+      <Filter>User Files\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\EnemtBullet.cpp">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\EnemtBulletFactoryWithRecycling.cpp">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\EnemySoldier.cpp">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\tank.cpp">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\TankShell.cpp">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\TankShellFactoryWithRecycling.cpp">
+      <Filter>User Files\Objects\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\ScoreManager.cpp">
+      <Filter>User Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\HUD.cpp">
+      <Filter>User Files\Objects\HUDs</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\startHUD.cpp">
+      <Filter>User Files\Objects\HUDs</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\toySoldierFactoryWithRecycling.cpp">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="User Files\toySoldierSpawnController.cpp">
+      <Filter>User Files\Objects\Enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dist\irrKlang 1.5\lib\ikpMP3.dll">
+      <Filter>_Libs\irrKlang 1.5\lib</Filter>
+    </None>
+    <None Include="..\dist\irrKlang 1.5\lib\irrKlang.dll">
+      <Filter>_Libs\irrKlang 1.5\lib</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

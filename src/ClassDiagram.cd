@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CollisionVolumeAABB">
+    <Position X="1" Y="11.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAgAAAAAAAACAAIEAAAAoAAAAAAAggABAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\AABB\CollisionVolumeAABB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolume">
+    <Position X="5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAIEAEAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolume.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeBoundingBox">
+    <Position X="2.5" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAAAAAAAACAAAAAAAAIAgAAAAEIAAAAAIAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolumeBoundingBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeBSphere">
+    <Position X="7.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAIEAAAAAAAAAAAAAIEAIAAIAAAAAEAgAAAAAgIAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Bounding Sphere\CollisionVolumeBSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeOBB">
+    <Position X="4.5" Y="11.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAIkAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\OBB\CollisionVolumeOBB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Align16" Collapsed="true">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>D:\Code\berthiaume2017spring_gam377\student\braya\Final\Code\dist\Math\include\Align16.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visualizer">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgACABAAIIAAAFAAoAAEAIAgAAMAAAgQEAgAgQgAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Tools\Visualizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideable" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgAIAAAAAAAAAIABCAEAgEAAAIAQAQQIgAAIAgAE=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableCommandBase" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAQ=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableCommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableGroupBase" Collapsed="true">
+    <Position X="15" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAQAAAAAAAAAAQAAAAAAAEAgAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroupBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableDeregistratonCommand&lt;C&gt;" Collapsed="true">
+    <Position X="15.25" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAEAAAAgAAAQAAgAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableDeregistratonCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableGroup&lt;C&gt;">
+    <Position X="15" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAQAAAIAAgAAIMAAAAEAAAAAAQCQgACKUAgA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableManager" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gBAEQAAAEAgAAAAAAAEAAAAAAIAAAAAAAAAggAAAAAQ=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableRegistratonCommand&lt;C&gt;" Collapsed="true">
+    <Position X="11.75" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAEAAAAAAAAhAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableRegistratonCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collisionTestPairCommand&lt;C1, C2&gt;">
+    <Position X="7.5" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAIAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestPairCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collisionTestSelfCommand&lt;C1&gt;">
+    <Position X="0.75" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAwAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestSelfCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collisionTestTerrainCommand&lt;C1&gt;">
+    <Position X="4" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAQAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestTerrainCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collideableUpdateGroupCommand&lt;C&gt;" Collapsed="true">
+    <Position X="19" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAEAAACAAAAgAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableUpdateGroupCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collisionTestCommandBase" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Attributes\Collidable\collisionTestCommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="scene" Collapsed="true">
+    <Position X="20.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAEBEgQAAAGAAAAPEkIgQAEAAgAAgAAQgAAAGAiI=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Scene\scene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sceneManager" Collapsed="true">
+    <Position X="20.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgABCgAAAAAAAAAEAAIAAAAAIAAQCAghAIAQAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Scene\sceneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sceneRegistrationBroker" Collapsed="true">
+    <Position X="20.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAQAAAACAAAAAAAACAQAA=</HashCode>
+      <FileName>Hummingbird Engine\Scene Manager\Scene\sceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="visualizerData" Collapsed="true">
+    <Position X="20.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAIgAAAAAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Tools\Visualizer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Calculations" Collapsed="true">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAAABBAAAAAIAAAADEAAEAAAggAAICAAAAAgQQQAA=</HashCode>
+      <FileName>Hummingbird Engine\CollisionSystem\Tools\Calculations.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

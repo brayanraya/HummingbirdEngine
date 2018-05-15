@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>GameEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include;$(SolutionDir)dist\irrKlang 1.5\include;$(SolutionDir)src\Hummingbird Engine</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkStatus>
+      </LinkStatus>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "..\dist\irrKlang 1.5\lib\*.*" "$(ProjectDir)$(Configuration)\"
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_EStreamModes.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioRecorder.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioStream.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IFileFactory.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IFileReader.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IRefCounted.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_irrKlangTypes.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISound.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundDeviceList.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundEffectControl.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundEngine.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundSource.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\ik_vec3d.h" />
+    <ClInclude Include="..\dist\irrKlang 1.5\include\irrKlang.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="Hummingbird Engine\Additions\Terrain\Terrain.h" />
+    <ClInclude Include="Hummingbird Engine\Additions\Terrain\TerrainRectangleArea.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Image Manger\imageManager.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Model Manger\modelManager.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Shader Manger\shaderManager.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Sound Manager\SoundManager.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Terrain Manager\terrainManager.h" />
+    <ClInclude Include="Hummingbird Engine\Asset Manager\Texture Manager\textureManager.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\AABB\CollisionVolumeAABB.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolume.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolumeBoundingBox.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Bounding Sphere\CollisionVolumeBSphere.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\OBB\CollisionVolumeOBB.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Calculations.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Color.h" />
+    <ClInclude Include="Hummingbird Engine\CollisionSystem\Tools\Visualizer.h" />
+    <ClInclude Include="Hummingbird Engine\hummingbirdCore.h" />
+    <ClInclude Include="Hummingbird Engine\Main Game\hummingbirdEngine.h" />
+    <ClInclude Include="Hummingbird Engine\Render Manager\Camera Manager\cameraManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmable.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableDeregistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableRegistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideable.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableCommandBase.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroupBase.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableDeregistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroup.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableRegistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestPairCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestSelfCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableTestTerrainCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableUpdateGroupCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collisionTestCommandBase.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Command\commandBase.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawable.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableDeregistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableRegistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputable.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableDeregistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\keyboardEventManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableRegistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\singleKeyEventManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Shared Enum\regestrationState.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateable.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableDeregistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableRegistratonCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjects.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsEntryCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsExitCommand.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\scene.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\sceneManager.h" />
+    <ClInclude Include="Hummingbird Engine\Scene Manager\Scene\sceneRegistrationBroker.h" />
+    <ClInclude Include="Hummingbird Engine\Time\Freeze Time\freezeTime.h" />
+    <ClInclude Include="Hummingbird Engine\Time\Time Manager\timeManager.h" />
+    <ClInclude Include="User Files\EnemtBulletFactoryWithRecycling.h" />
+    <ClInclude Include="User Files\EnemtBullet.h" />
+    <ClInclude Include="User Files\player.h" />
+    <ClInclude Include="User Files\ScoreManager.h" />
+    <ClInclude Include="User Files\startHUD.h" />
+    <ClInclude Include="User Files\TankShell.h" />
+    <ClInclude Include="User Files\TankShellFactoryWithRecycling.h" />
+    <ClInclude Include="User Files\toySoldierFactoryWithRecycling.h" />
+    <ClInclude Include="User Files\toySoldierSpawnController.h" />
+    <ClInclude Include="User Files\HUD.h" />
+    <ClInclude Include="User Files\bullet.h" />
+    <ClInclude Include="User Files\bulletFactoryWithRecycling.h" />
+    <ClInclude Include="User Files\tank.h" />
+    <ClInclude Include="User Files\EnemySoldier.h" />
+    <ClInclude Include="User Files\defaultScene.h" />
+    <ClInclude Include="User Files\frigate.h" />
+    <ClInclude Include="User Files\userScene.h" />
+    <ClInclude Include="User Files\ground.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\irrKlang 1.5\lib\irrKlang.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hummingbird Engine\Additions\Terrain\Terrain.cpp" />
+    <ClCompile Include="Hummingbird Engine\Additions\Terrain\TerrainRectangleArea.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Image Manger\imageManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Model Manger\modelManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Shader Manger\shaderManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Sound Manager\SoundManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Terrain Manager\terrainManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Asset Manager\Texture Manager\textureManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\AABB\CollisionVolumeAABB.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolume.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Base Volumes\CollisionVolumeBoundingBox.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Bounding Sphere\CollisionVolumeBSphere.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\OBB\CollisionVolumeOBB.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Calculations.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Color.cpp" />
+    <ClCompile Include="Hummingbird Engine\CollisionSystem\Tools\Visualizer.cpp" />
+    <ClCompile Include="Hummingbird Engine\Main Game\hummingbirdEngine.cpp" />
+    <ClCompile Include="Hummingbird Engine\Main Game\main.cpp" />
+    <ClCompile Include="Hummingbird Engine\Render Manager\Camera Manager\cameraManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmable.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableDeregistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Alarmable\alarmableRegistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideable.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableCommandBase.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Collidable\collideableGroupBase.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Command\commandBase.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawable.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableDeregistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Drawable\drawableRegistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputable.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableDeregistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\keyboardEventManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\inputableRegistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Inputable\singleKeyEventManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateable.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableDeregistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Attributes\Updateable\updateableRegistratonCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjects.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsEntryCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsExitCommand.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Game Objects\gameObjectsManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\scene.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\sceneManager.cpp" />
+    <ClCompile Include="Hummingbird Engine\Scene Manager\Scene\sceneRegistrationBroker.cpp" />
+    <ClCompile Include="Hummingbird Engine\Time\Freeze Time\freezeTime.cpp" />
+    <ClCompile Include="Hummingbird Engine\Time\Time Manager\timeManager.cpp" />
+    <ClCompile Include="User Files\EnemtBulletFactoryWithRecycling.cpp" />
+    <ClCompile Include="User Files\EnemtBullet.cpp" />
+    <ClCompile Include="User Files\player.cpp" />
+    <ClCompile Include="User Files\ScoreManager.cpp" />
+    <ClCompile Include="User Files\startHUD.cpp" />
+    <ClCompile Include="User Files\TankShell.cpp" />
+    <ClCompile Include="User Files\TankShellFactoryWithRecycling.cpp" />
+    <ClCompile Include="User Files\toySoldierFactoryWithRecycling.cpp" />
+    <ClCompile Include="User Files\toySoldierSpawnController.cpp" />
+    <ClCompile Include="User Files\HUD.cpp" />
+    <ClCompile Include="User Files\bullet.cpp" />
+    <ClCompile Include="User Files\bulletFactoryWithRecycling.cpp" />
+    <ClCompile Include="User Files\tank.cpp" />
+    <ClCompile Include="User Files\EnemySoldier.cpp" />
+    <ClCompile Include="User Files\defaultScene.cpp" />
+    <ClCompile Include="User Files\frigate.cpp" />
+    <ClCompile Include="User Files\Setup\userResources.cpp" />
+    <ClCompile Include="User Files\Setup\userSettings.cpp" />
+    <ClCompile Include="User Files\userScene.cpp" />
+    <ClCompile Include="User Files\ground.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dist\irrKlang 1.5\lib\ikpMP3.dll" />
+    <None Include="..\dist\irrKlang 1.5\lib\irrKlang.dll" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
